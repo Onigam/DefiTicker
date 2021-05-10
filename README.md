@@ -1,3 +1,6 @@
-# DefiTicker
+# DefiTicker for chrome
 
-https://developer.chrome.com/docs/extensions/mv2/getstarted/
+Display the total of your farming reward in dollars
+
+![](./images/screen.png)
+
