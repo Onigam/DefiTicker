@@ -47,12 +47,6 @@ chrome.runtime.onInstalled.addListener(function() {
                 const reward = res.farms[i].reward;
                 rewardInDollar += parseFloat(reward.balance * reward.price).toFixed(0);
             }    
-
-            // TODO        
-            /*chrome.storage.sync.set({rewardInDollar: rewardInDollar}, function() {
-                
-              });*/
-
             console.log(`Rewards : ${rewardInDollar} $`);
 
             if (chrome.browserAction && chrome.browserAction.setBadgeText) {
@@ -72,7 +66,7 @@ chrome.runtime.onInstalled.addListener(function() {
     
     };
 
-    xhr.open('GET', 'https://api2.apeboard.finance/pancake-bsc/<your_bsc_addr>');
+    xhr.open('GET', 'https://api2.apeboard.finance/pancake-bsc/0x5eCD1E3Aa0a11e78B109010EA8A5E2ea97f7b1D5');
     xhr.send();
 /*    chrome.browserAction.setBadgeText({
         text: "100$"
