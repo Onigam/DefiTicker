@@ -42,7 +42,7 @@ chrome.runtime.onInstalled.addListener(function() {
 
             const res = JSON.parse(xhr.responseText);
 
-            const rewardInDollar = 0;
+            let rewardInDollar = 0;
             for(var i=0; i<res.farms.length; i++) {
                 const reward = res.farms[i].reward;
                 rewardInDollar += parseFloat(reward.balance * reward.price).toFixed(0);
